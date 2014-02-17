@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<settings>
+  <!-- general -->
+  <debug type="int">1</debug>
+  <use_as_default type="int">1</use_as_default>
+
+  <!-- camera settings -->
+  <x_start type="int">0</x_start>
+  <x_end type="int">2047</x_end>
+  <y_start type="int">0</y_start>
+  <y_end type="int">2047</y_end>
+  <x_bin type="int">1</x_bin>
+  <y_bin type="int">1</y_bin>
+
+  <defect_correct_mode type="int">2</defect_correct_mode>
+  <exposure_time type="float">0.1</exposure_time>
+  <!-- <trigger_source type="int">3</trigger_source> -->
+  <!-- <output_trigger_kind type="int">3</output_trigger_kind> -->
+  <external_trigger type="int">0</external_trigger>
+
+  <!-- less common camera settings -->
+
+  <!-- film settings -->
+  <want_big_endian type="int">1</want_big_endian>
+  <directory type="string">C:\users\Data\</directory>
+  <filename type="string">movie</filename>
+  <acq_mode type="string">run_till_abort</acq_mode>
+<!--  <acq_mode type="string">fixed_length</acq_mode> -->
+  <frames type="int">600</frames>
+  <logfile type="string">c:\users\Data\image_log.txt</logfile>
+  <extensions type="string-array">,A647,Cy5,Cy3,Cy2,A405,FITC,YFP,GFP,BF</extensions>
+  <auto_increment type="int">1</auto_increment>
+  <want_bell type="int">1</want_bell>
+  <auto_shutters type="int">1</auto_shutters>
+  <filetype type="string">.dax</filetype>
+
+  <!-- view settings -->
+  <flip_horizontal type="int">0</flip_horizontal>
+  <flip_vertical type="int">0</flip_vertical>
+  <transpose type="int">0</transpose>
+  <scalemax type="int">2000</scalemax>
+  <scalemin type="int">100</scalemin>
+  <max_intensity type="int">10000</max_intensity>
+  <colortable type="string">idl5.ctbl</colortable>
+  <sync type="int">0</sync>
+
+  <!-- illumination settings -->
+  <shutters type="string">shutters_default.xml</shutters>
+  <default_power channel="0">1.0</default_power>
+  <default_power channel="1">1.0</default_power>
+  <default_power channel="2">1.0</default_power>
+  <default_power channel="3">1.0</default_power>
+  <default_power channel="4">1.0</default_power>
+  <default_power channel="5">1.0</default_power>
+  <default_power channel="6">1.0</default_power>
+  <button channel="0" power="1.0">Max</button>
+  <button channel="0" power="0.1">Low</button>
+  <button channel="1" power="1.0">Max</button>
+  <button channel="1" power="0.1">Low</button>
+  <button channel="2" power="1.0">Max</button>
+  <button channel="2" power="0.1">Low</button>
+  <button channel="3" power="1.0">Max</button>
+  <button channel="3" power="0.1">Low</button>
+  <button channel="4" power="1.0">Max</button>
+  <button channel="4" power="0.1">Low</button>
+  <button channel="5" power="1.0">Max</button>
+  <button channel="5" power="0.1">Low</button>
+  <button channel="6" power="1.0">Max</button>
+  <button channel="6" power="0.1">Low</button>
+
+  <!-- stage settings -->
+  <small_step_size type="float">5.0</small_step_size>
+  <large_step_size type="float">25.0</large_step_size>
+  <x_sign type="int">-1</x_sign>
+  <y_sign type="int">1</y_sign>
+  <stage_speed type="float">5.0</stage_speed>
+
+  <!-- spot counter -->
+  <have_spot_counter type="int">1</have_spot_counter>
+  <cell_size type="int">32</cell_size>
+  <threshold type="int">250</threshold>
+  <min_spots type="int">0</min_spots>
+  <max_spots type="int">500</max_spots>
+  <scale_bar_len type="float">1000</scale_bar_len>
+  <nm_per_pixel type="float">164</nm_per_pixel>
+
+  <!-- temperature logger settings -->
+
+  <!-- misc control -->
+  <jog_size type="float">0.01</jog_size>
+  <epi_position type="float">17.92</epi_position>
+  <tirf_position type="float">20.36</tirf_position>
+  <filter_names type="string-array">1,2,3,4,5,6</filter_names>
+  <filter_position type="int">0</filter_position>
+
+  <!-- TCP/IP control -->
+  <have_tcp_control type="int">1</have_tcp_control>
+  <tcp_port type="int">9000</tcp_port>
+
+  <!-- power progression settings -->
+  <have_progressions type="int">1</have_progressions>
+  <use_progressions type="int">0</use_progressions>
+  <pstart_value type="float">0.1</pstart_value>
+  <pinc_value type="float">0.01</pinc_value>
+  <pframe_value type="int">1000</pframe_value>
+
+</settings>

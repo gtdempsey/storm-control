@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<power_control_settings>
+  <block>
+    <description type="text">640</description>
+    <color type="rgb">255,0,0</color>
+    <channel type="int">0</channel>
+    <basic_shutter type="boolean">TRUE</basic_shutter>
+    <ni_board type="string">PCIe-6343</ni_board>
+    <dig_line type="int">7</dig_line>
+  </block>
+  <block>
+    <description type="text">488</description>
+    <color type="rgb">0,0,255</color>
+    <channel type="int">1</channel>
+    <min_voltage type="float">0.0</min_voltage>
+    <max_voltage type="float">3.0</max_voltage>
+    <use_aotf type="boolean">TRUE</use_aotf>
+    <frequency type="float">75.165</frequency>
+    <amplitude type="int">325</amplitude>
+    <aotf_channel type="int">5</aotf_channel>
+    <ni_board type="string">PCIe-6343</ni_board>
+    <dig_line type="int">13</dig_line>
+  </block>
+</power_control_settings>
