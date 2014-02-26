@@ -114,7 +114,6 @@ class qstateQIlluminationControlWidget(illuminationControl.QIlluminationControlW
         nicontrol.setDigitalLine("PCIe-6343", 6, False)
 
 
-
 #
 # qstate shutter control.
 #
@@ -158,8 +157,6 @@ class qstateShutterControl(shutterControl.ShutterControl):
         # to catch the next camera "fire" immediately after the end of the cycle.
         #
         frequency = (1.001/self.kinetic_value) * float(self.oversampling)
-
-        print self.waveforms
 
         # set up the analog channels
         self.wv_task = nicontrol.WaveformOutput(self.board, 0)

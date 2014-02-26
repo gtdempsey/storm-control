@@ -3,7 +3,8 @@
   <!-- Defines the camera for qstate -->.
 
   <camera>
-    <module type="string">classicSingleCamera</module>
+    <!-- <module type="string">classicSingleCamera</module> -->
+    <module type="string">detachedSingleCamera</module>
     <parameters>
       <control type="string">hamamatsuCameraControl</control>
       <display type="string">hamamatsuCameraWidget</display>
@@ -25,31 +26,25 @@
     
 
     <!-- Control of miscellaneous hardware. -->
-    <!--
     <misc_control>
       <class_name type="string">AMiscControl</class_name>
       <menu_item type="string">Misc. Control</menu_item>
-      <module_name type="string">miscControl.storm3MiscControl</module_name>
+      <module_name type="string">miscControl.qstateMiscControl</module_name>
     </misc_control>
-    -->
 
     <!-- Automatic illumination power adjustment. -->
-    <!--
     <progressions>
       <class_name type="string">ProgressionControl</class_name>
       <menu_item type="string">Progressions</menu_item>
       <module_name type="string">progressionControl</module_name>
     </progressions>
-    -->
 
     <!-- Motorized XY stage. -->
-    <!--
     <stage>
       <class_name type="string">AStageControl</class_name>
       <menu_item type="string">Stage Control</menu_item>
-      <module_name type="string">stagecontrol.storm3StageControl</module_name>
+      <module_name type="string">stagecontrol.qstateStageControl</module_name>
     </stage>
-    -->
 
     <!-- Remote control of HAL via TCP/IP. -->
     <tcpip>
